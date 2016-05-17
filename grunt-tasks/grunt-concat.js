@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 			files: {
 				'<%= project.public %>/assets/js/vendor.js': [
 					'bower_components/jquery/dist/jquery.min.js',
+					'bower_components/jquery.stellar/jquery.stellar.min.js',
 					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js'
 				]
 			}
