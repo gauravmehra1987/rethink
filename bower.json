@@ -1,0 +1,24 @@
+{
+  "name": "rethink",
+  "description": "A landing page for samsung aus",
+  "main": "index.js",
+  "authors": [
+    "Gaurav Mehra"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "samsung"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.3"
+  }
+}
