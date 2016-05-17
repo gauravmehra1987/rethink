@@ -35,6 +35,14 @@ module.exports = function(grunt) {
 				'copy:images'
 			]
 		},
+		fonts: {
+			files: [
+				'<%= project.src %>/assets/fonts/**/*.{eot,woff,ttf,svg}'
+			],
+			tasks: [
+				'copy:main'
+			]
+		},
 		
 		html: {
 			files: ['<%= project.src %>/view/**/*.{hbs,json}'],

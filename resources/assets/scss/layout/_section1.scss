@@ -2,22 +2,43 @@
 
 //Laura's CSS
 .laura{ 
-	
-		&.bg{
-			background:url(../../images/bg.jpg) no-repeat center center;
-			background-size: cover;
+
+	min-height: 78rem;
+	overflow: hidden;
+	&.bg{
+		background:url(../img/section1/bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.container{
+		margin: 0 auto;
+    	display: block;
+    	max-width: 70%;
+    	position: relative;
+
+		.character{
+			width: 40%;
+   			position: absolute;
+    		top: 12em;
+    		left: 37%;
+    		z-index: 1;
+
+			img{
+				width: 100%;
+			}
 		}
 
 		.content{ 
-			margin: 0 auto;
-			display: block;
-			max-width: 49rem;
+			float: left;
  
 			h1{
 				font-size: 14rem;
-				margin-top: 10rem;
+				margin-top: 28rem;
     			line-height: 10rem;
     			margin-left: -0.69rem;
+    			span{
+    				padding-left: 4.5rem;
+    			}
 			}
 			h3{
 				font-size: 4rem;
@@ -27,4 +48,7 @@
 				}
 			}
 		}
+	}
 }
+
+
