@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 				'<%= project.src %>/assets/img/**/*.{png,jpg,gif}'
 			],
 			tasks: [
-				'copy'
+				'copy:images'
 			]
 		},
 		
