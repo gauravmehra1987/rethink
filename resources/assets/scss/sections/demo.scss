@@ -1,0 +1,44 @@
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: yellowgreen;
+	position: absolute;
+}
+
+.box {
+	-webkit-animation: slide 5s linear 0s 3;
+	animation: slide 5s linear 0s 3;
+}
+
+/*@-webkit-keyframes slide {
+	from {
+		left:0
+	}
+	to {
+		left: 600px
+	}
+}
+
+@keyframes slide {
+	from {
+		left: 0;
+	}
+	to {
+		left: 600px;
+	}
+}*/
+
+@-webkit-keyframes slide {
+	to {
+		-webkit-transform: translate(600px, 0px);
+		-ms-transform: translate(600px, 0px);
+		transform: translate(600px, 0px);
+	}
+}
+@keyframes slide {
+	to {
+		-webkit-transform: translate(600px, 0px);
+		-ms-transform: translate(600px, 0px);
+		transform: translate(600px, 0px);
+	}
+}

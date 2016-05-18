@@ -11,7 +11,10 @@ module.exports = function(grunt) {
 				layout: '<%= project.src %>/view/layouts/home.hbs'
 			},
 			files: {
-				'<%= project.public %>/': ['<%= project.src %>/view/templates/home/index.hbs' ]
+				'<%= project.public %>/': [
+					'<%= project.src %>/view/templates/home/index.hbs',
+					'<%= project.src %>/view/templates/pages/demo.hbs'
+				]
 			}
 		}
 	});
