@@ -1,1 +1,7 @@
-console.log("Initialize the app.js file");
+
+$(document).ready(function(){
+
+	$("html").niceScroll();
+	$(window).stellar();
+
+});

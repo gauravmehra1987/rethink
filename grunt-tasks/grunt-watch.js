@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		},
 		js: {
 			files: [
-				'<%= project.src %>/assets/js/**/*/*.js'
+				'<%= project.src %>/assets/js/**/*.js'
 			],
 			tasks: [
 				'concat:vendor',
