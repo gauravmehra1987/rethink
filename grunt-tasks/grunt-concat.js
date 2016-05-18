@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
 					'<%= project.src %>/assets/js/vendor/yt.js',
 					'<%= project.src %>/assets/js/vendor/jquery-scrolltofixed-min.js',
-					'<%= project.src %>/assets/js/vendor/jquery.fittext.js'
+					'<%= project.src %>/assets/js/vendor/jquery.bxslider.js'
 				]
 			}
 		},

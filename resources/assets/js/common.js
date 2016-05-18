@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	$("html").niceScroll();
 	$(window).stellar();
-	$("#fittext1").fitText();
+	$('.bxslider').bxSlider();
 	$(".player").mb_YTPlayer();
 
 			// grab the initial top offset of the navigation 
