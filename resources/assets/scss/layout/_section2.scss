@@ -1,0 +1,56 @@
+
+
+//Sharni's CSS
+.sharni{ 
+	background: #000;
+
+	.layout{
+		width: 1000px;
+		margin: 0 auto;
+
+		.left-col{
+			float: left;
+			width: 50%;
+			color: #fff;
+
+			h2{
+				font-size: 3rem;
+				padding-top: 3rem;
+			}
+			p{
+				font-size: 0.8rem;
+				line-height: 1.4rem;
+				padding: 0 4.5rem 1.5rem 0;
+				font-weight: 300;
+				font-family:'SamsungSharpSans-Medium';
+
+				span{
+					color: $blue;
+				}
+			}
+			hr{
+				border: none;
+				background: #fff;
+				outline: none;
+				height: 3px;
+				width: 180px;
+				padding:0;
+				margin: 2rem 0 3rem -3rem;
+				position: relative;
+			}
+		}
+		.right-col{
+			float: left;
+			width: 50%;	
+
+			img{
+				float: right;
+    			width: 80%;
+    			margin-top: 2rem;
+			}
+		}
+	}
+	
+}
+
+

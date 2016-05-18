@@ -7,7 +7,9 @@ module.exports = function(grunt) {
 				'<%= project.public %>/assets/js/vendor.js': [
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/jquery.stellar/jquery.stellar.min.js',
-					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js'
+					'bower_components/letteringjs/jquery.lettering.js',
+					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js',
+					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js'
 				]
 			}
 		},

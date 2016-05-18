@@ -3,7 +3,7 @@
 //Laura's CSS
 .laura{ 
 
-	min-height: 78rem;
+	min-height: 50rem;
 	overflow: hidden;
 	&.bg{
 		background:url(../img/section1/bg.jpg) no-repeat center center;
@@ -15,12 +15,14 @@
     	display: block;
     	max-width: 70%;
     	position: relative;
+    	margin-top: 20%;
 
 		.character{
 			width: 40%;
    			position: absolute;
-    		top: 12em;
+    		top: -15em;
     		left: 37%;
+    		margin: -12rem 0 0 -12rem;
     		z-index: 1;
 
 			img{
@@ -30,21 +32,73 @@
 
 		.content{ 
 			float: left;
+			position: relative;
  
 			h1{
 				font-size: 14rem;
-				margin-top: 28rem;
     			line-height: 10rem;
     			margin-left: -0.69rem;
+    			font-weight: 300;
     			span{
     				padding-left: 4.5rem;
     			}
 			}
 			h3{
 				font-size: 4rem;
+				display: inline-block;
 
 				span{
 					color: $blue;
+				}
+			}
+
+			.right_text_block{
+				float: right;
+				margin: 1.5rem 3rem 0 0;
+
+				h4{
+					font-size: 1.2rem;
+				}
+				p{
+					font-family:'SamsungSharpSans-Medium';
+					font-size: 0.7rem;
+				}
+			}
+
+			ul{
+				list-style-type: none;
+				li{
+					float: left;
+					width: 50px;
+					height: 50px;
+					overflow: hidden;
+					margin:2rem 1rem 0 0;
+					background-size:cover;
+
+					&.first{
+						background:url(../img/social-icons/yt.png) no-repeat center bottom;
+					}
+					&.second{
+						background:url(../img/social-icons/fb.png) no-repeat center bottom;
+					}
+					&.third{
+						background:url(../img/social-icons/insta.png) no-repeat center bottom;
+					}
+					&.fourth{
+						background:url(../img/social-icons/twitter.png) no-repeat center bottom;
+					}
+
+					&:hover{
+						background-position: center top;
+					}
+
+					a{
+						display: block;
+						text-decoration: none;
+						width: 100%;
+						height: 100%;
+					}
+
 				}
 			}
 		}
