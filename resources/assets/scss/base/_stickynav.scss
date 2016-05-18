@@ -52,6 +52,9 @@ nav ul li a:before {
 nav ul li a:hover {
   color: #000;
 }
+nav ul li a.active {
+  color: #000;
+}
 
 
 /* stroke */
@@ -75,6 +78,9 @@ nav.fill ul li a:after {
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
+nav.stroke ul li a.active:after {
+  width: 100%;
+}
 
 nav.fill ul li a {
   transition: all 2s;
@@ -86,11 +92,29 @@ nav.fill ul li a:after {
   margin: 0;
   opacity: 0;
 }
+nav.fill ul li a.active {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
 nav.fill ul li a:hover {
   color: #fff;
   z-index: 1;
 }
+nav.fill ul li a.active {
+  color: #fff;
+  z-index: 1;
+}
 nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+nav.fill ul li a.active:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;

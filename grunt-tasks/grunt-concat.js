@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 					'bower_components/jquery/dist/jquery.min.js',
 					'bower_components/jquery.stellar/jquery.stellar.min.js',
 					'bower_components/letteringjs/jquery.lettering.js',
+					'bower_components/jquery_appear/jquery.appear.js',
 					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js',
 					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
 					'<%= project.src %>/assets/js/vendor/yt.js',
