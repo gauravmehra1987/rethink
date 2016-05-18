@@ -9,7 +9,10 @@ module.exports = function(grunt) {
 					'bower_components/jquery.stellar/jquery.stellar.min.js',
 					'bower_components/letteringjs/jquery.lettering.js',
 					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js',
-					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js'
+					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
+					'<%= project.src %>/assets/js/vendor/yt.js',
+					'<%= project.src %>/assets/js/vendor/jquery-scrolltofixed-min.js',
+					'<%= project.src %>/assets/js/vendor/jquery.fittext.js'
 				]
 			}
 		},
