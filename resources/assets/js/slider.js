@@ -1,8 +1,9 @@
 var BioSlider = {
 	elem:{sel:$('.bxslider'), clk:$(".bios-block li .information .icon")},
 	bxslider:false,
+	options:{responsive:false},
 	init:function(){
-		BioSlider.bxslider = BioSlider.elem.sel.bxSlider();
+		BioSlider.bxslider = BioSlider.elem.sel.bxSlider(BioSlider.options);
 		BioSlider.bind();
 	},
 	bind:function(){
@@ -21,7 +22,6 @@ var BioSlider = {
 $(document).ready(function(){
 	var break_point = 768;
 	if($(window).width() > break_point){
-		console.log($(window).width());
 		BioSlider.init();
 	}
 });

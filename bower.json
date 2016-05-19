@@ -22,6 +22,7 @@
     "jquery": "^2.2.3",
     "jquery.stellar": "stellar.js#^0.6.2",
     "letteringjs": "Lettering.js#^0.7.0",
-    "jquery_appear": "jquery.appear.js#^0.3.6"
+    "jquery_appear": "jquery.appear.js#^0.3.6",
+    "jquery-mousewheel": "^3.1.13"
   }
 }
