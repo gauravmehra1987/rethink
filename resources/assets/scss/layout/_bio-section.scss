@@ -6,6 +6,7 @@
         margin: 0 auto;
         background-color: #fff;
         display: table;
+        height: 617px;
         .block {
             margin: 0 110px;
             display: table;
@@ -134,7 +135,7 @@
         		}
         		p{
         		    font-size: 0.7rem;
-				    line-height: 1.3rem;
+				    line-height: 1.2rem;
 				    font-weight: 300;
 				    font-family: 'SamsungSharpSans-Medium';
 				    padding-right: 1rem;
@@ -220,7 +221,7 @@
 
     	h2{
     		float: left;
-    		line-height: 7rem;
+            margin-top: 3rem;
     		margin-right: 1rem;
     	}
 
