@@ -1,0 +1,14 @@
+{
+	"player-one":{
+		"name":"Player One",
+		"desc":"This is some test description of the player one",
+		"twitter":"",
+		"video":""
+	},
+	"player-two":{
+		"name":"Player Two",
+		"desc":"This is some test description of the player two",
+		"twitter":"",
+		"video":""
+	}
+}
