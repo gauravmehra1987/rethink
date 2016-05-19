@@ -11,9 +11,9 @@ module.exports = function(grunt) {
 					'bower_components/jquery_appear/jquery.appear.js',
 					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js',
 					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
-//					'<%= project.src %>/assets/js/vendor/yt.js',
 					'<%= project.src %>/assets/js/vendor/jquery-scrolltofixed-min.js',
-					'<%= project.src %>/assets/js/vendor/jquery.bxslider.js'
+					'<%= project.src %>/assets/js/vendor/jquery.bxslider.js',
+					'bower_components/jquery-mousewheel/jquery.mousewheel.min.js'
 				]
 			}
 		},

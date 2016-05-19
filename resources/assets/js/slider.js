@@ -1,10 +1,11 @@
 var BioSlider = {
 	elem:{sel:$('.bxslider'), clk:$(".bios-block li .information .icon")},
 	bxslider:false,
-	options:{responsive:false},
+	options:{responsive:true,infiniteLoop:false},
 	init:function(){
 		BioSlider.bxslider = BioSlider.elem.sel.bxSlider(BioSlider.options);
 		BioSlider.bind();
+		BioSlider.scroll();
 	},
 	bind:function(){
 		BioSlider.elem.clk.click(function(){
@@ -16,6 +17,28 @@ var BioSlider = {
 	},
 	goto:function(slide){
 		BioSlider.bxslider.goToSlide(slide);
+	},
+	scroll:function(){
+		BioSlider.elem.sel.on('mousewheel', function(event) {
+			if(event.deltaY == 1){
+				if($(".bx-pager-item:first-child").find('a').hasClass('active')){
+					//do nothing if first is alreay active
+				}else{
+					BioSlider.bxslider.goToPrevSlide();
+					event.preventDefault();
+					event.stopPropagation();
+				}
+			}else{
+				if($(".bx-pager-item:last-child").find('a').hasClass('active')){
+					//do nothing if first is alreay active
+				}else{
+					BioSlider.bxslider.goToNextSlide();
+					event.preventDefault();
+					event.stopPropagation();
+				}
+			}
+			
+		});
 	}
 }
 
