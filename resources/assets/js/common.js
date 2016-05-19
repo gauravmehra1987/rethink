@@ -1,8 +1,10 @@
 
 $(document).ready(function(){
-
+	window.onload = function(){
+		$(window).stellar();
+	}
+	
 	$("html").niceScroll();
-	$(window).stellar();
 	
 //	$(".player").mb_YTPlayer();
 
