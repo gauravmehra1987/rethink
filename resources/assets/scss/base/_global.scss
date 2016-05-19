@@ -30,6 +30,9 @@ html, body {
     height: 100%;
     font-family:'SamsungSharpSans-Bold';
 }
+body{
+    overflow-x: hidden;
+}
 section{ 
 	width: 100%; 
 	float: left;
