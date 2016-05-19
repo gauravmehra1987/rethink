@@ -41,7 +41,7 @@ var preload = {
 		if(preload.percent == 100){
 			setTimeout(function(){
 				preload.container.hide();
-			},2000);
+			},1000);
 		}
 	}
 }
