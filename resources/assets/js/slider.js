@@ -19,5 +19,12 @@ var BioSlider = {
 }
 
 $(document).ready(function(){
-	BioSlider.init();
+	var break_point = 768;
+	$(window).resize(function(){
+		if($(window).width() > break_point){
+			console.log($(window).width());
+			BioSlider.init();
+		}
+	})
+	$(window).trigger("resize");
 });
