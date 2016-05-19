@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("html").niceScroll();
 	$(window).stellar();
 	$('.bxslider').bxSlider();
-	$(".player").mb_YTPlayer();
+//	$(".player").mb_YTPlayer();
 
 			// grab the initial top offset of the navigation 
 		   	var stickyNavTop = $('.nav').offset().top;
@@ -31,7 +31,7 @@ $(document).ready(function(){
   			// var $disappeared = $('.scroll-active');
 			$('.scroll-active').appear();
 			$('.scroll-active').on('appear', function(event, $all_appeared_elements) {
-				alert(all_appeared_elements);
+				
 		      // this element is now inside browser viewport
 		    });
 		    $('.scroll-active').on('disappear', function(event, $all_disappeared_elements) {
@@ -56,6 +56,19 @@ $(document).ready(function(){
 				}if(el.data('type')=="slider"){
 					activeDiv("#slider");
 				}
-			})
+			});
+			
+//			var slider = false;
+//			$(".biography").appear();
+//			$(".biography").on('appear', function(event, $all_appeared_elements) {
+//				if(!slider){
+//					console.log("appeared now");
+//					setTimeout(function(){
+//						$('.bxslider').bxSlider();
+//					},2000);
+//					slider=true;
+//				}
+//				
+//		    });
 
 });
