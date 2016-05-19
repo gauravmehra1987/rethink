@@ -43,7 +43,7 @@ var BioSlider = {
 }
 
 $(document).ready(function(){
-	var break_point = 768;
+	var break_point = 999;
 	if($(window).width() > break_point){
 		BioSlider.init();
 	}
