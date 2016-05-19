@@ -6,6 +6,24 @@ var preload = {
 	percent:0,
 	loaded:0,
 	init:function(){
+		console.log("Total Images : " + preload.count);
+		
+		preload.loaded = 0;
+		preload.percent = 0;
+		
+		preload.interval = setInterval(preload.setloop, 50);
+
+		//preload.start();
+	},
+	setloop:function(){
+		++preload.percent;
+		preload.update(preload.percent);
+		if(preload.percent == 100){
+			clearInterval(preload.interval);
+			preload.unload();
+		}
+	},
+	start:function(){
 		preload.selector.each(function(i){
 			$(this).load(function(){
 				++preload.loaded;
@@ -23,7 +41,7 @@ var preload = {
 		if(preload.percent == 100){
 			setTimeout(function(){
 				preload.container.hide();
-			},2000);
+			},1000);
 		}
 	}
 }
