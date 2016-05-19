@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 					'bower_components/jquery_appear/jquery.appear.js',
 					'<%= project.src %>/assets/js/vendor/scrollme/jquery.scrollme.min.js',
 					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
-					'<%= project.src %>/assets/js/vendor/yt.js',
+//					'<%= project.src %>/assets/js/vendor/yt.js',
 					'<%= project.src %>/assets/js/vendor/jquery-scrolltofixed-min.js',
 					'<%= project.src %>/assets/js/vendor/jquery.bxslider.js'
 				]
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 		app: {
 			files: {
 				'<%= project.public %>/assets/js/app.js': [
-					'<%= project.src %>/assets/js/common.js'
+					'<%= project.src %>/assets/js/*.js'
 				]
 			}
 		},
