@@ -5,7 +5,7 @@ var preload = {
 	count:$("img").length,
 	percent:0,
 	loaded:0,
-	duration:30,
+	duration:10,
 	init:function(){		
 		preload.loaded = 0;
 		preload.percent = 0;

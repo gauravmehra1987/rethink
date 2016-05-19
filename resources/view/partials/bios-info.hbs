@@ -1,11 +1,13 @@
-<section class="bios-section">
+{{#each players}}
+<li class="tab_content" id="{{id}}" data-player="{{id}}">
+<section  class="bios-section">
    <div class="gallery-layout">
       <div class="bios-info">
          <div class="bio-image">
             <img src="assets/img/bios-info/laurin.jpg" alt="" title="">
             <div class="bio-name">
                <div class="name">
-                  <h2>Laura Geitz</h2>
+                  <h2>{{name}}</h2>
                </div>
             </div>
          </div>
@@ -56,7 +58,7 @@
             </div>
             <div class="social">
                <div class="social-ico">
-                  <h2>Follow Laura on:</h2>
+                  <h2>Follow {{name}} on:</h2>
                   <ul>
                      <li class="second"><a href=""></a></li>
                      <li class="third"><a href=""></a></li>
@@ -68,3 +70,5 @@
       </div>
    </div>
 </section>
+</li>
+{{/each}}
