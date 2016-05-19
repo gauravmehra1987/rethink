@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$(window).stellar();
 	}
 	
-	$("html").niceScroll();
+	$("html").niceScroll({horizrailenabled:false});
 	
 //	$(".player").mb_YTPlayer();
 
