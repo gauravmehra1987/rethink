@@ -5,15 +5,11 @@ var preload = {
 	count:$("img").length,
 	percent:0,
 	loaded:0,
-	init:function(){
-		console.log("Total Images : " + preload.count);
-		
+	duration:30,
+	init:function(){		
 		preload.loaded = 0;
 		preload.percent = 0;
-		
-		preload.interval = setInterval(preload.setloop, 50);
-
-		//preload.start();
+		preload.interval = setInterval(preload.setloop, preload.duration);
 	},
 	setloop:function(){
 		++preload.percent;
@@ -34,8 +30,8 @@ var preload = {
 		});
 	},
 	update:function(percent){
-		preload.percent_container.text(percent + "%");
-		console.log(percent);	
+		if(percent%3==0 || percent == 100)
+			preload.percent_container.text(percent + "%");
 	},
 	unload:function(){
 		if(preload.percent == 100){

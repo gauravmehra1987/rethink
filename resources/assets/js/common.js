@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	$("html").niceScroll();
 	$(window).stellar();
-	$('.bxslider').bxSlider();
+	
 //	$(".player").mb_YTPlayer();
 
 			// grab the initial top offset of the navigation 
@@ -55,18 +55,5 @@ $(document).ready(function(){
 					activeDiv("#slider");
 				}
 			});
-			
-//			var slider = false;
-//			$(".biography").appear();
-//			$(".biography").on('appear', function(event, $all_appeared_elements) {
-//				if(!slider){
-//					console.log("appeared now");
-//					setTimeout(function(){
-//						$('.bxslider').bxSlider();
-//					},2000);
-//					slider=true;
-//				}
-//				
-//		    });
 
 });
