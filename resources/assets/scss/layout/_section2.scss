@@ -8,6 +8,10 @@
 		width: 1000px;
 		margin: 0 auto;
 
+		@media screen and ( $size: $largeScreen) {
+			width: 90%;
+		}
+
 		.left-col{
 			float: left;
 			width: 50%;
