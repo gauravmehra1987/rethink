@@ -177,6 +177,10 @@ $break-small: 320px;
   }
         .bleed-block{
         	margin:20px;
+         @media screen and (max-width: $break-tablet) {
+            margin:0px;
+  }
+            
         	.copy-block{
         		width:50%;
         		float: left;
@@ -187,6 +191,10 @@ $break-small: 320px;
         			font-size: 0.9rem;
         			margin-bottom: 0.5rem;
     				margin-left: 0.5rem;
+                @media screen and (max-width: $break-tablet) {
+            margin-top: 0.5rem;
+  }
+                        
 
         		}
         		p{
@@ -287,14 +295,23 @@ $break-small: 320px;
     .social{
     	width:100%;
     	float: left;
+        @media screen and (max-width: $break-tablet) {
+        padding-bottom: 1.5rem;
+        }
     .social-ico{
     	width: 342px;
     	margin:0 auto;
+        @media screen and (max-width: $break-tablet) {
+        width: 282px;
+        }
 
     	h2{
     		float: left;
             margin-top: 3rem;
     		margin-right: 1rem;
+            @media screen and (max-width: $break-tablet) {
+                margin-top: 2.2rem;
+            }
     	}
 
     	ul{
@@ -307,17 +324,33 @@ $break-small: 320px;
 			    overflow: hidden;
 			    margin: 2rem 1rem 0 0;
 			    cursor: pointer;
+                @media screen and (max-width: $break-tablet) {
+                width: 30px;
+			    height: 30px;
+  }
 				&.second{
-			    	    background: url(../img/social-icons/fb.png) no-repeat center bottom;
+			    background: url(../img/social-icons/fb.png) no-repeat center bottom;
+                @media screen and (max-width: $break-tablet) {
+                background-size: 100%;
+  }
 			    }
 			    &.third{
-			    	    background: url(../img/social-icons/insta.png) no-repeat center bottom;
+			    background: url(../img/social-icons/insta.png) no-repeat center bottom;
+                @media screen and (max-width: $break-tablet) {
+                background-size: 100%;
+  }
 			    }
 			    &.fourth{
-			    	    background: url(../img/social-icons/twitter.png) no-repeat center bottom;
+			    background: url(../img/social-icons/twitter.png) no-repeat center bottom;
+                @media screen and (max-width: $break-tablet) {
+                background-size: 100%;
+  }
 			    }
 			    &:hover{
-						background-position: center top;
+				background-position: center top;
+                @media screen and (max-width: $break-tablet) {
+                background-size: 100%;
+  }
 					}
     		}
 
