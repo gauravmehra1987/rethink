@@ -27,16 +27,16 @@ $(document).ready(function(){
 			$(window).scroll(function() {
 				stickyNav();
 			});
-			// var $appeared = $('.scroll-active');
-  			// var $disappeared = $('.scroll-active');
-			$('.scroll-active').appear();
-			$('.scroll-active').on('appear', function(event, $all_appeared_elements) {
-				alert(all_appeared_elements);
-		      // this element is now inside browser viewport
-		    });
-		    $('.scroll-active').on('disappear', function(event, $all_disappeared_elements) {
-		      // this element is now outside browser viewport
-		    });
+			
+  			$(".scroll-active").appear();
+  			$(document.body).on('appear', '.scroll-active', function(e, $affected) {
+  				$("[data-type]").removeClass('active');
+			    // this code is executed for each appeared element
+			    $("[data-type='"+ $(this).attr('id')+"']").addClass('active');
+			   
+			  });
+			
+		    
 			var activeDiv = function(selector){
 				$('html,body').animate({
 				        scrollTop: $(selector).offset().top},
