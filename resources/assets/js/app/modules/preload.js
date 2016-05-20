@@ -5,39 +5,49 @@ var preload = {
 	count:$("img").length,
 	percent:0,
 	loaded:0,
-	duration:30,
+	counter:50,
+	duration:20,
+	interval:false,
 	init:function(){		
 		preload.loaded = 0;
 		preload.percent = 0;
-		preload.interval = setInterval(preload.setloop, preload.duration);
+		preload.start();
 	},
 	setloop:function(){
-		++preload.percent;
-		preload.update(preload.percent);
-		if(preload.percent == 100){
+		++preload.counter;
+		preload.updateText(preload.counter);
+		if(preload.counter == 100){
+			console.log("clearing interval")
 			clearInterval(preload.interval);
 			preload.unload();
 		}
 	},
 	start:function(){
 		preload.selector.each(function(i){
-			$(this).load(function(){
+			$("img").on('load', function() {
 				++preload.loaded;
 				preload.percent = parseInt(preload.loaded/preload.count*100);
 				preload.update(preload.percent);
-				preload.unload();
 			});
 		});
 	},
 	update:function(percent){
-		if(percent%3==0 || percent == 100)
-			preload.percent_container.text(percent + "%");
+		if(percent<100){
+			var half = parseInt(percent/2);
+			preload.updateText(half);
+		}
+		if(percent==100){
+			preload.percent = 50;
+			preload.interval = setInterval(preload.setloop, preload.duration);
+		}
+			
+	},
+	updateText:function(text){
+		preload.percent_container.text(text + "%");
 	},
 	unload:function(){
-		if(preload.percent == 100){
-			setTimeout(function(){
-				preload.container.hide();
-			},1000);
-		}
+		setTimeout(function(){
+			preload.container.hide();
+		},1000);
 	}
 }

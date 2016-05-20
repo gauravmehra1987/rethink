@@ -1,14 +1,18 @@
 {
-	"player-one":{
-		"name":"Player One",
-		"desc":"This is some test description of the player one",
-		"twitter":"",
-		"video":""
-	},
-	"player-two":{
-		"name":"Player Two",
-		"desc":"This is some test description of the player two",
-		"twitter":"",
-		"video":""
+	"player_one":{
+		"title":"Reth",
+		"title1":"nk",
+		"subtitle":"role ",
+		"subtitle1":"models",
+		"name":"Laura Geit",
+		"dest":"Diamonds, Captain",
+		"imgsrc_netball": "assets/img/section1/netball-logo.png", 
+		"imgsrc_netball_alt": "",
+		"imgsrc_netball_title": "",
+		"imgsrc": "assets/img/section1/laura.png", 
+		"imgsrc_alt": "",
+		"imgsrc_title": ""
 	}
+	
+	
 }
