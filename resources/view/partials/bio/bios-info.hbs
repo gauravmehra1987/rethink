@@ -1,0 +1,85 @@
+{{#each players}}
+
+<li id="{{id}}" class="tab_content" data-player="{{id}}">
+<section  class="bios-section">
+
+   <div class="gallery-layout">
+      <div class="bios-info">
+         <div class="bio-image">
+            <img src="{{l_image}}" alt="{{l_image_alt}}" title="{{l_image_title}}">
+            <div class="bio-name">
+               <div class="name">
+                  <h2>{{name}}</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="bio-full-info">
+         <div class="bleed-block">
+            <div class="copy-block">
+
+               <h3>{{heading_left}}</h3>
+               
+               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>
+
+            </div>
+            <div class="right-fluid">
+            <div class="video-block">
+               <iframe src="https://www.youtube.com/embed/{{video_id}}?autoplay=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="info-head">“{{thumb_text}} <span class="blue-col">{{thumb_text1}}</span> {{thumb_text2}}”</div>
+
+            <div class="thumb-block">
+               
+			   <div class="thumb">
+                  <img src="assets/img/bios-info/thumb-1.jpg" alt="" title="">
+                  <div class="information">
+                     <div class="tint">
+                        <div class="icon">+</div>
+                     </div>
+                  </div>
+				  
+               </div>
+               <div class="thumb">
+                  <img src="assets/img/bios-info/thumb-2.jpg" alt="" title="">
+                  <div class="information">
+                     <div class="tint">
+                        <div class="icon">+</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="thumb">
+                  <img src="assets/img/bios-info/thumb-3.jpg" alt="" title="">
+                  <div class="information">
+                     <div class="tint">
+                        <div class="icon">+</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="thumb">
+                  <img src="assets/img/bios-info/thumb-4.jpg" alt="" title="">
+                  <div class="information">
+                     <div class="tint">
+                        <div class="icon">+</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="social">
+               <div class="social-ico">
+                  <h2>Follow {{name1}} on:</h2>
+                  <ul>
+                     <li class="second"><a href=""></a></li>
+                     <li class="third"><a href=""></a></li>
+                     <li class="fourth"><a href=""></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+</li>
+{{/each}}

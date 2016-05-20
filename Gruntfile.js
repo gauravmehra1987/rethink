@@ -32,4 +32,15 @@ module.exports = function (grunt) {
 		'connect',
 		'watch'
 	]);
+	
+	grunt.registerTask('build', [
+		'clean:public',
+		'concurrent:dev',
+		'sass',
+		'uglify',
+		'cssmin',
+//		'htmlmin:build',
+		'connect',
+		'watch'
+	]);
 }

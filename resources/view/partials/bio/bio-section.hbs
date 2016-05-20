@@ -1,0 +1,29 @@
+<section class="bios-section">
+   <div class="gallery-layout">
+      <div class="block">
+         <h2>Meet our ambassadors</h2>
+         <hr class="animateme scrollme"
+            data-when="enter"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="-200">
+         <div class="bios-block">
+            <ul>
+				
+				{{#each players}}
+					<li>
+					   <label>{{name}}</label>
+					   <img src="{{image}}" alt="{{name}}" title="{{name}}">
+					   <div class="information">
+						  <div class="tint">
+							  <div class="icon tab" id="{{id}}">+</div>
+						  </div>
+					   </div>
+					</li>
+			   {{/each}}
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>

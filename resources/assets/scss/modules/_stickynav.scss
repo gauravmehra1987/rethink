@@ -1,0 +1,147 @@
+
+// Sticky Nav
+
+	
+
+	.nav {
+		position: -webkit-sticky;
+		position: absolute;
+    	width: 100%;
+    	z-index: 9;
+    	bottom: 0;
+    	height: 65px;
+
+      @media screen and ( $size: $tablet-mobile) {
+        display: none;
+    }
+	}
+	.sticky {
+  		position: fixed;
+  		width: 100%;
+  		left: 0;
+  		top: 0;
+  		z-index: 100;
+  		border-top: 0;
+  		background: $bgcolor;
+	}
+
+
+	/* NAVIGATION */
+nav {
+  width: 90%;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 1.4rem 1rem;
+  text-decoration: none;
+  color: $graytext;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #000;
+}
+nav ul li a.active {
+  color: #000;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: $blue;
+  height: 6px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+nav.stroke ul li a.active:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a.active {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a.active {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+nav.fill ul li a.active:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+

@@ -1,0 +1,105 @@
+
+
+//Sharni's CSS
+.sharni{ 
+	background: #000;
+
+	.layout{
+		width: 1000px;
+		margin: 0 auto;
+
+		@media screen and ( $size: $largeScreen) {
+			width: 90%;
+		}
+
+		.left-col{
+			float: left;
+			width: 50%;
+			color: #fff;
+
+			@media screen and ( $size: $tablet-mobile) {
+        		width: 90%;
+        		margin-left: 5%;
+        		float: none;
+    		}
+
+			h2{
+				font-size: 3rem;
+				padding-top: 4rem;
+
+				@media screen and ( $size: $largeScreen) {
+        			    font-size: 2rem;
+    					padding-top: 3rem;
+    			}
+
+			}
+			p{
+				font-size: 1rem;
+				line-height: 1.4rem;
+				padding: 0 4rem 1.5rem 0;
+				font-weight: 300;
+				font-family:'SamsungSharpSans-Medium';				
+
+				span{
+					color: $blue;
+				}
+				&.hatchtag{
+					font-size: 1.2rem;
+				}
+				@media screen and ( $size: $largeScreen) {
+        			font-size: 0.7rem;
+				    line-height: 0.9rem;
+				    padding: 0 4rem 1rem 0;
+    			}
+    			@media screen and ( $size: $tablet-mobile) {
+        			padding: 0 2rem 1.5rem 0;
+    			}
+			}
+			hr{
+				border: none;
+				background: #fff;
+				outline: none;
+				height: 3px;
+				width: 180px;
+				padding:0;
+				margin: 1.5rem 0 2.5rem -2rem;
+				position: relative;
+
+				@media screen and ( $size: $largeScreen) {
+        			margin: 1rem 0 1.5rem -2rem;
+    			}
+			}
+		}
+		.right-col{
+			float: left;
+			width: 50%;	
+			@media screen and ( $size: $tablet-mobile) {
+        		width: 90%;
+        		margin-left: 5%;
+        		float: none;
+    		}
+
+			img{
+				float: right;
+    			width: 100%;
+    			margin-top: 5rem;
+    			display: block;
+    			@media screen and ( $size: $tablet-mobile) {
+        			margin-top: 0rem;
+    			}
+			}
+
+			video.fillWidth {
+  				width: 100%;
+  				margin-top: 5rem;
+  				display: block;
+  				@media screen and ( $size: $tablet-mobile) {
+        			margin-top: 0rem;
+    			}
+			}
+		}
+	}
+	
+}
+
+
