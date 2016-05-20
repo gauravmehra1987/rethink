@@ -39,6 +39,7 @@ module.exports = function (grunt) {
 		'sass',
 		'uglify',
 		'cssmin',
+//		'htmlmin:build',
 		'connect',
 		'watch'
 	]);
