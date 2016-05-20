@@ -28,8 +28,6 @@ menu = {
 				}else{
 					$affected.length==1?menu.addActivClass('laura'):"";
 				}
-			}else{
-				console.log("nothing to process");
 			}
 			if($(document).scrollTop()<10){
 				menu.addActivClass('laura');
