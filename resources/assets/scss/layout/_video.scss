@@ -49,11 +49,19 @@ margin: 0px auto 15px;
 	 z-index: 30; 
 	 cursor: pointer; 
 
+	@media screen and ( $size: $tablet-mobile) {
+		width: 12vw;
+    	height: 12vw;
+    	background: url(../img//play.png) no-repeat 0 0;
+    	background-size: cover;
+    	top: 40%;
+    }
 	@media screen and ( $size: $phoneLandscape) {
 		width: 15vw;
     	height: 15vw;
     	background: url(../img//play.png) no-repeat 0 0;
     	background-size: cover;
+    	top: 38%;
     }
 
 } 
