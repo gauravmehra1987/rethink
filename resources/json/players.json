@@ -2,32 +2,73 @@
 	"laura-geitz":{
 		"id":"laura-geitz",
 		"name":"Laura Geitz",
+		"name1":"Laura",
 		"image":"assets/img/bios-section/laura.jpg",
-		"l_image":"assets/img/bios-section/laura.jpg",
-		"video_id":"cyohHyQl-kc"
+		"l_image":"assets/img/bios-info/laurin.jpg",
+		"l_image_alt":"",
+		"l_image_title":"",
+		"thumb_text":"You’re",
+		"thumb_text1":"stronger",
+		"thumb_text2":"than you think.",
+		"video_id":"cyohHyQl-kc",
+		"heading_left":"Captain, Goal Keeper / Goal Defence"
 	},
 	"caitlin-bassett":{
 		"id":"caitlin-bassett",
 		"name":"Caitlin Bassett",
+		"name1":"Caitlin",
 		"image":"assets/img/bios-section/caitlin.jpg",
-		"video_id":"cyohHyQl-kc"
+		"l_image":"assets/img/bios-info/caitlin.jpg",
+		"l_image_alt":"",
+		"l_image_title":"",
+		"thumb_text":"Find your strength.",
+		"thumb_text1":"",
+		"thumb_text2":"",
+		"video_id":"cyohHyQl-kc",
+		"heading_left":"Goal Shooter"
+		
 	},
 	"sharni-layton":{
 		"id":"sharni-layton",
 		"name":"Sharni Layton",
+		"name1":"Sharni",
 		"image":"assets/img/bios-section/sharni.jpg",
-		"video_id":"cyohHyQl-kc"
+		"l_image":"assets/img/bios-info/sharni.jpg",
+		"l_image_alt":"",
+		"l_image_title":"",
+		"thumb_text":"Prove them wrong.",
+		"thumb_text1":"",
+		"thumb_text2":"",
+		"video_id":"cyohHyQl-kc",
+		"heading_left":"Goal Keeper / Goal Defence / Wing Defence"
 	},
 	"kim-ravaillion":{
 		"id":"kim-ravaillion",
 		"name":"Kim Ravaillion",
+		"name1":"Kim",
 		"image":"assets/img/bios-section/kim.jpg",
-		"video_id":"cyohHyQl-kc"
+		"l_image":"assets/img/bios-info/kim.jpg",
+		"l_image_alt":"",
+		"l_image_title":"",
+		"thumb_text":"It’s worth the sacrifice.”",
+		"thumb_text1":"",
+		"thumb_text2":"",
+		"video_id":"cyohHyQl-kc",
+		"heading_left":"Centre"
 	},
 	"paige-hadley":{
 		"id":"paige-hadley",
 		"name":"Paige Hadley",
+		"name1":"Paige",
 		"image":"assets/img/bios-section/paige.jpg",
-		"video_id":"cyohHyQl-kc"
+		"l_image":"assets/img/bios-info/paigehadley.jpg",
+		"l_image_alt":"",
+		"l_image_title":"",
+		"thumb_text":"Never give up.",
+		"thumb_text1":"",
+		"thumb_text2":"",
+		"video_id":"cyohHyQl-kc",
+		"heading_left":"Wing Attack"
 	}
+	
 }

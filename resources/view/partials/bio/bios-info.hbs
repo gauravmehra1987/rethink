@@ -1,10 +1,10 @@
 {{#each players}}
-<li id="{{id}}" data-player="{{id}}">
+<li class="tab_content" id="{{id}}" data-player="{{id}}">
 <section  class="bios-section tab_content">
    <div class="gallery-layout">
       <div class="bios-info">
          <div class="bio-image">
-            <img src="assets/img/bios-info/laurin.jpg" alt="" title="">
+            <img src="{{l_image}}" alt="{{l_image_alt}}" title="{{l_image_title}}">
             <div class="bio-name">
                <div class="name">
                   <h2>{{name}}</h2>
@@ -15,21 +15,23 @@
       <div class="bio-full-info">
          <div class="bleed-block">
             <div class="copy-block">
-               <h3>Captain, Goal Defence</h3>
+               <h3>{{heading_left}}</h3>
                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<br/><br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
             <div class="video-block">
                <iframe width="100%" height="255px" src="https://www.youtube.com/embed/{{video_id}}?autoplay=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
             </div>
-            <div class="info-head"><sup class="big">“</sup>You’re <span class="blue-col">stronger</span> than you think.<span class="big">”</span></div>
+            <div class="info-head"><sup class="big">“</sup>{{thumb_text}} <span class="blue-col">{{thumb_text1}}</span> {{thumb_text2}}<span class="big">”</span></div>
             <div class="thumb-block">
-               <div class="thumb">
+               
+			   <div class="thumb">
                   <img src="assets/img/bios-info/thumb-1.jpg" alt="" title="">
                   <div class="information">
                      <div class="tint">
                         <div class="icon">+</div>
                      </div>
                   </div>
+				  
                </div>
                <div class="thumb">
                   <img src="assets/img/bios-info/thumb-2.jpg" alt="" title="">
@@ -58,7 +60,7 @@
             </div>
             <div class="social">
                <div class="social-ico">
-                  <h2>Follow {{name}} on:</h2>
+                  <h2>Follow {{name1}} on:</h2>
                   <ul>
                      <li class="second"><a href=""></a></li>
                      <li class="third"><a href=""></a></li>

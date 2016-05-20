@@ -3,11 +3,11 @@
 <section class="laura bg scroll-active" id="laura">
 	<div class="container">
 		<div class="content os-phrases" id="os-phrases">
-			<h1 id="fittext3">Reth<span>nk</span></h1>
-			<h3><span>role</span> models</h3>
+			<h1 id="fittext3">{{bio.player_one.title}}<span>{{bio.player_one.title1}}</span></h1>
+			<h3><span>{{bio.player_one.subtitle}}</span> {{bio.player_one.subtitle1}}</h3>
 			<div class="right_text_block">
-				<h4>Laura Geitz</h4>
-				<p>Diamonds, Captain</p>
+				<h4>{{bio.player_one.name}}</h4>
+				<p>{{bio.player_one.dest}}</p>
 			</div>
 			<ul>
 				<li class="first"><a href=""></a></li>
@@ -16,11 +16,11 @@
 				<li class="fourth"><a href=""></a></li>
 			</ul>
 			<div class="netball-logo">
-				<img src="assets/img/section1/netball-logo.png" />
+				<img src="{{bio.player_one.imgsrc_netball}}" alt="{{bio.player_one.imgsrc_netball_alt}}" title="{{bio.player_one.imgsrc_netball_title}}" />
 			</div>
 		</div>
 		<div class="character" data-stellar-ratio="1.5">
-		<img src="assets/img/section1/laura.png" alt="" />
+		<img src="{{bio.player_one.imgsrc}}" alt="{{bio.player_one.imgsrc_alt}}" title="{{bio.player_one.imgsrc_title}}" />
 		</div>
 	</div>
 
@@ -29,10 +29,12 @@
 		<section>
   			<nav class="stroke">
     			<ul>
+				
       				<li><a data-type="laura" href="#">RETHINK</a></li>
       				<li><a data-type="sharni" href="#">OUR PARTNERSHIP</a></li>
       				<li><a data-type="video" href="#">OUR STORY</a></li>
       				<li><a data-type="slider" href="#">MEET OUR AMBASSADORS</a></li>
+				  
     			</ul>
   			</nav>
 		</section>
