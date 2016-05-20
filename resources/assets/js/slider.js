@@ -5,7 +5,7 @@ var BioSlider = {
 	init:function(){
 		BioSlider.bxslider = BioSlider.elem.sel.bxSlider(BioSlider.options);
 		BioSlider.bind();
-		BioSlider.scroll();
+//		BioSlider.scroll();
 	},
 	bind:function(){
 		BioSlider.elem.clk.click(function(){
@@ -46,17 +46,16 @@ var Tab = {
 	elem:{slides:$(".tab_content"),clk:$(".bios-block li .information .icon")},
 	init:function(){
 		Tab.elem.slides.hide();
-		Tab.elem.clk.click(function(e){ console.log("clicked")
+		Tab.elem.clk.click(function(e){
 			var $this = $(this);
 			Tab.elem.slides.hide();
 			var slide = $("li#"+$this.attr('id'));
 			slide.show();
 			setTimeout(function(){
-				console.log(slide.offset().top);
 				$('html, body').animate({scrollTop:slide.offset().top + 517 +"px"}, 1000, "linear");
-			},20)
-			
+			},20);
 		});
+		Tab.elem.slides.eq(0).show();
 	}
 }
 
