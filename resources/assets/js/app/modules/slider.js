@@ -60,7 +60,7 @@ var Tab = {
 }
 
 $(document).ready(function(){
-	var break_point = 999;
+	var break_point = 800;
 	if($(window).width() > break_point){
 		BioSlider.init();
 	}else{
