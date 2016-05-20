@@ -17,6 +17,11 @@
         background-color: #fff;
         display: table;
         height: 617px;
+
+        @media only screen and ($min-size:$tab) and ($size: $largeScreen){
+        height: 530px;
+                
+    }
         @media screen and (max-width: $break-large) {
         width: 90%;
   }
@@ -168,6 +173,10 @@
                             display: table-cell;
                             vertical-align: middle;
                             font-size: 3rem;
+                       @media only screen and ($min-size:$tab) and ($size: $largeScreen){
+                            font-size: 5vw;
+                
+    }
                         }
                     }
                 }
@@ -230,6 +239,11 @@
             .right-fluid{
                 width:45%;
                 float: right;
+            @media screen and (max-width: $break-tablet) {
+                width:100%;
+                float: right;
+                
+  }
 
         	.video-block{
         		width:100%;
@@ -238,11 +252,23 @@
                 width: 254px;
                 float:none;
                 margin: 0 auto;
-                 iframe{
-                     margin-top: 30px;
-                 }
+                 
                  
   }
+                iframe{
+                    
+                width:100%;
+                height:230px;
+                @media only screen and ($min-size:$tab) and ($size: $largeScreen){
+                       height:138px;
+                    }
+                
+                @media screen and (max-width: $break-tablet) {
+                margin-top: 30px;
+                 
+                 
+  }
+                 }
         	}
         .info-head{
         	    width: 100%;
@@ -256,7 +282,8 @@
                 white-space: normal;
     }
          @media screen and (max-width: $break-tablet) {
-           font-size: 1.1rem;
+           font-size: 5vw;
+                white-space: normal;
   }
 			    .big{
 			    	font-size: 4rem;
@@ -277,6 +304,9 @@
         	float:left;
         	cursor:pointer;
         	position:relative;
+    @media screen and (max-width: $break-tablet) {
+            width:25%;
+  }
 
         	img{
         		width:100%;
@@ -294,6 +324,14 @@
 		    -o-transition: all 0.5s linear;
 		    -ms-transition: all 0.5s linear;
 		    transition: all 0.5s linear;
+            @media only screen and ($min-size:$tab) and ($size: $largeScreen){
+            top: 7px;
+            left: 7px;
+    }
+        @media screen and (max-width: $break-tablet) {
+            top: 10px;
+            left: 10px;
+        }
 		    .tint{
 		    	background: #fff;
 			    opacity: 0.9;
@@ -340,7 +378,7 @@
             font-size: 1.5vw;
     }
             @media screen and (max-width: $break-tablet) {
-                margin-top: 2.2rem;
+                margin-top: 1.4rem;
             }
         }
 
