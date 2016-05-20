@@ -42,9 +42,29 @@ var BioSlider = {
 	}
 }
 
+var Tab = {
+	elem:{slides:$(".tab_content"),clk:$(".bios-block li .information .icon")},
+	init:function(){
+		Tab.elem.slides.hide();
+		Tab.elem.clk.click(function(e){ console.log("clicked")
+			var $this = $(this);
+			Tab.elem.slides.hide();
+			var slide = $("li#"+$this.attr('id'));
+			slide.show();
+			setTimeout(function(){
+				console.log(slide.offset().top);
+				$('html, body').animate({scrollTop:slide.offset().top + 517 +"px"}, 1000, "linear");
+			},20)
+			
+		});
+	}
+}
+
 $(document).ready(function(){
-	var break_point = 768;
+	var break_point = 999;
 	if($(window).width() > break_point){
 		BioSlider.init();
+	}else{
+		Tab.init();
 	}
 });

@@ -1,0 +1,27 @@
+{
+	"laura-geitz":{
+		"id":"laura-geitz",
+		"name":"Laura Geitz",
+		"image":"assets/img/bios-section/laura.jpg"
+	},
+	"caitlin-bassett":{
+		"id":"caitlin-bassett",
+		"name":"Caitlin Bassett",
+		"image":"assets/img/bios-section/caitlin.jpg"
+	},
+	"sharni-layton":{
+		"id":"sharni-layton",
+		"name":"Sharni Layton",
+		"image":"assets/img/bios-section/sharni.jpg"
+	},
+	"kim-ravaillion":{
+		"id":"kim-ravaillion",
+		"name":"Kim Ravaillion",
+		"image":"assets/img/bios-section/kim.jpg"
+	},
+	"paige-hadley":{
+		"id":"paige-hadley",
+		"name":"Paige Hadley",
+		"image":"assets/img/bios-section/paige.jpg"
+	}
+}

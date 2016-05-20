@@ -10,51 +10,18 @@
             data-translatex="-200">
          <div class="bios-block">
             <ul>
-               <li>
-                  <label>Laura Geitz</label>
-                  <img src="assets/img/bios-section/laura.jpg" alt="" title="">
-                  <div class="information">
-                     <div class="tint">
-                        <div class="icon">+</div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <label>Caitlin Bassett</label>
-                  <img src="assets/img/bios-section/caitlin.jpg" alt="" title="">
-                  <div class="information">
-                     <div class="tint">
-                        <div class="icon">+</div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <label>Sharni Layton</label>
-                  <img src="assets/img/bios-section/sharni.jpg" alt="" title="">
-                  <div class="information">
-                     <div class="tint">
-                        <div class="icon">+</div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <label>Kim Ravaillion</label>
-                  <img src="assets/img/bios-section/kim.jpg" alt="" title="">
-                  <div class="information">
-                     <div class="tint">
-                        <div class="icon">+</div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <label>Paige Hadley</label>
-                  <img src="assets/img/bios-section/paige.jpg" alt="" title="">
-                  <div class="information">
-                     <div class="tint">
-                        <div class="icon">+</div>
-                     </div>
-                  </div>
-               </li>
+				
+				{{#each players}}
+					<li>
+					   <label>{{name}}</label>
+					   <img src="{{image}}" alt="{{name}}" title="{{name}}">
+					   <div class="information">
+						  <div class="tint">
+							  <div class="icon tab" id="{{id}}">+</div>
+						  </div>
+					   </div>
+					</li>
+			   {{/each}}
             </ul>
          </div>
       </div>
