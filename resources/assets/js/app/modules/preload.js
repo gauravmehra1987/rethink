@@ -41,9 +41,3 @@ var preload = {
 		}
 	}
 }
-
-
-$(document).ready(function(){
-	preload.init();
-});
-
