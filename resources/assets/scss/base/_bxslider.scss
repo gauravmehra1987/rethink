@@ -56,6 +56,14 @@
 	padding-top: 20px;
 }
 
+.bxslider{
+	    
+	@media screen and ( $size: $largeScreen) {
+		margin-left: 0.5vw;
+    }
+
+}
+
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
@@ -100,6 +108,9 @@
 	height: 67px;
 	text-indent: -9999px;
 	z-index: 9999;
+	@media screen and ( $size: $largeScreen) {
+		width: 20px;
+    }
 }
 
 
