@@ -44,6 +44,14 @@
     		@media screen and ( $size: $break-mob) {
 			    margin: -2vw 0 0 0;
     		}
+    		@media screen and ( $size: $iphone6puls) {
+			    margin: 20vw 0 0 0;
+    		}
+    		@media screen and ( $size: $allsmalldevices) {
+			    margin: 26vw 0 0 0;
+    		}
+
+
 
 			img{
 				width: 100%;
