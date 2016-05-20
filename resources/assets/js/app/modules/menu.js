@@ -24,7 +24,6 @@ menu = {
 			if($affected.not(':first').length!=0){
 				var eTop = parseInt($affected.length==1?$affected.offset().top:$affected.not(':first').offset().top - $(document).scrollTop());
 				if(menu.midHeight>eTop){
-					console.log($affected.not(':first').attr('id'));
 					$affected.length==1?menu.addActivClass('laura'):menu.addActivClass($affected.not(':first').attr('id'));
 				}else{
 					$affected.length==1?menu.addActivClass('laura'):"";
@@ -43,20 +42,12 @@ menu = {
 		},'slow');
 	},
 	goto:function(){
-		$("[data-type]").click(function(){
+		$("[data-type]").click(function(e){ e.preventDefault();
 			var el = $(this);
 			$("[data-type]").removeClass('active');
 			el.addClass('active');
-			if(el.data('type')=="laura"){
-				menu.goto("#laura");
-			}
-			if(el.data('type')=="sharni"){
-				menu.goto("#sharni");
-			}if(el.data('type')=="video"){
-				menu.goto("#video");
-			}if(el.data('type')=="slider"){
-				menu.goto("#slider");
-			}
+				menu.anchorTo("#"+$(this).data('type'));
+			
 		});
 	}
 }
