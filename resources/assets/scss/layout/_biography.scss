@@ -8,12 +8,10 @@
 	padding: 4rem 0 2rem 0;
 	overflow-x: hidden; 
 
-	@media screen and ( $size: $iphone6puls) {
+    @media screen and ( $size: $tablet-mobile) {
 		padding: 0rem 0 3rem 0;
     }
-    @media screen and ( $size: $nexusTab) {
-		padding: 0rem 0 3rem 0;
-    }
+
 
 	
 }
