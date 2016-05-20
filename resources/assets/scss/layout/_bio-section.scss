@@ -17,6 +17,7 @@
         background-color: #fff;
         display: table;
         height: 617px;
+        overflow: hidden;
 
         @media only screen and ($min-size:$tab) and ($size: $largeScreen){
         height: 530px;
@@ -148,13 +149,14 @@
             width: 50%;
             float: left;
             height:100%;
+
         @media screen and (max-width: $break-tablet) {
         width: 100%;
   }
             .bio-image {
                 position: relative;
                 height:100%;
-                background-color:#e8e9ea;
+                background-color:#E8E8F3;
                 img {
                     width: 100%;
                 }
@@ -210,7 +212,7 @@
     				margin-left: 0.5rem;
                 @media only screen and ($min-size:$tab) and ($size: $largeScreen){
                     font-size: 1.5vw;
-                    white-space:nowrap;
+                    
     }
                 @media screen and (max-width: $break-tablet) {
                     margin-top: 0.5rem;
@@ -276,7 +278,6 @@
 			    text-align: center;
 			    margin: 1rem 0;
 			    font-size: 0.9rem;
-                white-space: nowrap;
             @media only screen and ($min-size:$tab) and ($size: $largeScreen){
                 font-size: 2vw;
                 white-space: normal;
