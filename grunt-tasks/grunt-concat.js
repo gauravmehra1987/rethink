@@ -13,14 +13,17 @@ module.exports = function(grunt) {
 					'<%= project.src %>/assets/js/vendor/jquery.nicescroll.js',
 					'<%= project.src %>/assets/js/vendor/jquery-scrolltofixed-min.js',
 					'<%= project.src %>/assets/js/vendor/jquery.bxslider.js',
-					'bower_components/jquery-mousewheel/jquery.mousewheel.min.js'
+//					'bower_components/jquery-mousewheel/jquery.mousewheel.min.js'
 				]
 			}
 		},
 		app: {
 			files: {
 				'<%= project.public %>/assets/js/app.js': [
-					'<%= project.src %>/assets/js/*.js'
+					'<%= project.src %>/assets/js/app/start.js',
+					'<%= project.src %>/assets/js/app/init.js',
+					'<%= project.src %>/assets/js/app/modules/*.js',
+					'<%= project.src %>/assets/js/app/end.js',
 				]
 			}
 		},
