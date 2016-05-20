@@ -21,8 +21,8 @@ module.exports = function(grunt) {
 			files: {
 				'<%= project.public %>/assets/js/app.js': [
 					'<%= project.src %>/assets/js/app/start.js',
-					'<%= project.src %>/assets/js/app/init.js',
 					'<%= project.src %>/assets/js/app/modules/*.js',
+					'<%= project.src %>/assets/js/app/init.js',
 					'<%= project.src %>/assets/js/app/end.js',
 				]
 			}

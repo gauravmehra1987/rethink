@@ -1,4 +1,5 @@
-
+preload.init();
+menu.init();
 $(document).ready(function(){
 	window.onload = function(){
 		$(window).stellar();
@@ -28,34 +29,6 @@ $(document).ready(function(){
 			// and run it again every time you scroll
 			$(window).scroll(function() {
 				stickyNav();
-			});
-
-  			$(".scroll-active").appear();
-  			$(document.body).on('appear', '.scroll-active', function(e, $affected) {
-  				$("[data-type]").removeClass('active');
-			    // this code is executed for each appeared element
-			    $("[data-type='"+ $(this).attr('id')+"']").addClass('active');
-			   
-			  });
-			var activeDiv = function(selector){
-				$('html,body').animate({
-				        scrollTop: $(selector).offset().top},
-				        'slow');
-			}
-			$("[data-type]").click(function(){
-				var el = $(this);
-				$("[data-type]").removeClass('active');
-				el.addClass('active');
-				if(el.data('type')=="laura"){
-					activeDiv("#laura");
-				}
-				if(el.data('type')=="sharni"){
-					activeDiv("#sharni");
-				}if(el.data('type')=="video"){
-					activeDiv("#video");
-				}if(el.data('type')=="slider"){
-					activeDiv("#slider");
-				}
 			});
 
 });
