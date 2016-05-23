@@ -1,11 +1,50 @@
 var BioSlider = {
-	elem:{sel:$('.bxslider'), clk:$(".bios-block li .information .icon")},
+	elem:{
+		sel:$('.bxslider'), 
+		clk:$(".bios-block li .information .icon"),
+		videoIframe:$(".video-block iframe"),
+		bx_pager:$(".bx-pager-link"),
+		bx_prev:$(".bx-prev"),
+		bx_next:$(".bx-next")
+	},
 	bxslider:false,
-	options:{responsive:true,infiniteLoop:false},
+	options:{responsive:true,infiniteLoop:false,onSlideBefore:function(){ BioSlider.stopVideo(); }, onSlideAfter:function(){ BioSlider.handleNav(); }},
 	init:function(){
+		$(".bx-prev").hide();
 		BioSlider.bxslider = BioSlider.elem.sel.bxSlider(BioSlider.options);
 		BioSlider.bind();
+		BioSlider.onDisappear();
+		BioSlider.handleNav();
 //		BioSlider.scroll();
+	},
+	handleNav:function(){
+		if($(".bx-pager-link").first().hasClass("active")){
+			$(".bx-prev").hide();
+		}else{
+		  $(".bx-prev").show();
+		}
+		
+		if($(".bx-pager-link").last().hasClass("active")){
+			$(".bx-next").hide();
+		}else{
+		  $(".bx-next").show();
+		}
+	},
+	onDisappear:function(){
+		
+		$(".video-block").appear({interval:1000});
+		var $disappeared = $(".video-block");
+		$(document.body).on('disappear',".video-block", function(e, $affected) {
+			console.log("hiding block");
+//			$disappeared.empty();
+			BioSlider.stopVideo();
+		});
+	},
+	stopVideo:function(){
+		BioSlider.elem.videoIframe.each(function(){
+			var iframe = $(this)[0].contentWindow;
+			iframe.postMessage('{"event":"command","func":"stopVideo","args":""}','*');
+		});
 	},
 	bind:function(){
 		BioSlider.elem.clk.click(function(){
@@ -43,10 +82,25 @@ var BioSlider = {
 }
 
 var Tab = {
-	elem:{slides:$(".tab_content"),clk:$(".bios-block li .information .icon")},
+	elem:{slides:$(".tab_content"),clk:$(".bios-block li .information .icon"), videoIframe:$(".video-block iframe")},
+	onDisappear:function(){
+		$(".video-block").appear({interval:1000});
+		var $disappeared = $(".video-block");
+		$(document.body).on('disappear',".video-block", function(e, $affected) {
+			Tab.stopVideo();
+		});
+	},
+	stopVideo:function(){
+		Tab.elem.videoIframe.each(function(){
+			var iframe = $(this)[0].contentWindow;
+			iframe.postMessage('{"event":"command","func":"stopVideo","args":""}','*');
+		});
+	},
 	init:function(){
+		Tab.onDisappear();
 		Tab.elem.slides.hide();
 		Tab.elem.clk.click(function(e){
+			Tab.stopVideo();
 			var $this = $(this);
 			Tab.elem.slides.hide();
 			var slide = $("li#"+$this.attr('id'));
@@ -56,6 +110,7 @@ var Tab = {
 			},20);
 		});
 		Tab.elem.slides.eq(0).show();
+		
 	}
 }
 
